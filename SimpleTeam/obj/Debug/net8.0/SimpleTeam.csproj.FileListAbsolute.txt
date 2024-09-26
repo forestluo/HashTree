@@ -1,0 +1,11 @@
+D:\Workspaces\AlgMain\SimpleTeam\obj\Debug\net8.0\SimpleTeam.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspaces\AlgMain\SimpleTeam\obj\Debug\net8.0\SimpleTeam.AssemblyInfoInputs.cache
+D:\Workspaces\AlgMain\SimpleTeam\obj\Debug\net8.0\SimpleTeam.AssemblyInfo.cs
+D:\Workspaces\AlgMain\SimpleTeam\obj\Debug\net8.0\SimpleTeam.csproj.CoreCompileInputs.cache
+D:\Workspaces\AlgMain\SimpleTeam\bin\Debug\net8.0\SimpleTeam.deps.json
+D:\Workspaces\AlgMain\SimpleTeam\bin\Debug\net8.0\SimpleTeam.dll
+D:\Workspaces\AlgMain\SimpleTeam\bin\Debug\net8.0\SimpleTeam.pdb
+D:\Workspaces\AlgMain\SimpleTeam\obj\Debug\net8.0\SimpleTeam.dll
+D:\Workspaces\AlgMain\SimpleTeam\obj\Debug\net8.0\refint\SimpleTeam.dll
+D:\Workspaces\AlgMain\SimpleTeam\obj\Debug\net8.0\SimpleTeam.pdb
+D:\Workspaces\AlgMain\SimpleTeam\obj\Debug\net8.0\ref\SimpleTeam.dll
