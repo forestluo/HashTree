@@ -1,10 +1,12 @@
-这个项目代码的目的主要是为了实现和展示在 www.AlgMain.com 中所谈到的一些算法。这些算法包括自然语言处理（NLP）算法，也包括哈希树查找算法（详见知乎：https://zhuanlan.zhihu.com/p/290832847 或者CSDN：https://blog.csdn.net/weixin_42574918/article/details/109718660 ）。该项目的多数代码由原来的Java代码移植至C#（Visual Studio）。
+这个项目代码的主要目的是为了实现和展示在 www.AlgMain.com 中所谈到的一些算法。这些算法包括自然语言处理（NLP）算法，也包括哈希树查找算法（详见知乎：https://zhuanlan.zhihu.com/p/290832847 或者CSDN：https://blog.csdn.net/weixin_42574918/article/details/109718660 ）。该项目的多数代码由原来的Java代码移植至C#（Visual Studio）。
 
-由于两种语言所面对的平台和环境不同，做了不少修改和调整。该项目中的目录及其说明：
+由于两种语言所面对的平台和环境不同，相应地做了不少修改和调整。
+
+项目SimpleTeam中的主要目录及其部分代码文件说明：
 
 #（1）Case目录
 
-  这里主要是一些测试用的例程。也相当于展示项目代码基本功能的例程。
+  这里主要是一些测试用的例程。除了检测和验证的代码的正确性和效率，也相当于展示项目代码基本功能的例程。
   
   EndianCase.cs：主要展示了编码字节序的功能，包括：Little Endian（主机序）和Big Endian（网络序）。
   
@@ -16,13 +18,13 @@
   
   StringBinCase.cs：展示了不同类型的字符串（ToString、StringBuilder、RecycledString、LogString）对象在使用时间消耗上的差异。
   
-  SystemTimeCase.cs：展示了项目自定义的时间体系的基本功能。
+  SystemTimeCase.cs：展示了项目自定义时间体系的基本功能。
 
 #（2）Constant目录
 
   这里主要是一些系统常量的定义。这里面有一些常量定义和MMS-WAP协议相关。
   
-  Prime.cs：定义了质数的基本算法，包括求取余数，小于1024的质数表，小于256的互质数表（用于哈希树查找算法）。
+  Prime.cs：定义了质数的基本算法，包括求取余数函数GetRemainder，小于1024的质数表，小于256的互质数表（用于哈希树查找算法）。
 
 #（3）Container目录
 
