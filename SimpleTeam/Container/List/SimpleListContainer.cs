@@ -2,8 +2,8 @@
 
 namespace SimpleTeam.Container.List
 {
-    public class SimpleListContainer :
-        SimpleContainer, IEnumerable 
+    public class SimpleListContainer
+        : SimpleContainer, IEnumerable 
     {
         private IListNode root;
 

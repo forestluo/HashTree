@@ -2,7 +2,8 @@
 
 namespace SimpleTeam.Container.Hash
 {
-    public class SimpleHashContainer : SimpleContainer
+    public class SimpleHashContainer
+        : SimpleContainer
     {
         public const int MAX_COUNT_OF_SUBNODE = 256;
 

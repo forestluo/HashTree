@@ -1,6 +1,5 @@
-﻿
+﻿using SimpleTeam.Time;
 using SimpleTeam.Constant;
-using SimpleTeam.Time;
 
 namespace SimpleTeam.Function
 {

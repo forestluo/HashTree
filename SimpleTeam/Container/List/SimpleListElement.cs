@@ -1,7 +1,7 @@
 ﻿namespace SimpleTeam.Container.List
 {
-    internal class SimpleListElement :
-        SimpleElement, IListNode
+    internal class SimpleListElement
+        : SimpleElement, IListNode
     {
         //Next
         private IListNode next;

@@ -1,6 +1,7 @@
 ﻿namespace SimpleTeam.Log
 {
-    public class LogBin : RecycleBin
+    public class LogBin
+        : RecycleBin
     {
         //Default Capacity
         public const int DEFAULT_CAPACITY = 4;
@@ -19,10 +20,10 @@
             logBin.SetCapacity(DEFAULT_CAPACITY);
         }
 
-        protected override IRecycle CreateObject()
+        internal override IRecycle CreateObject()
         {
             //Return result.
-            return new LogString(true);
+            return new LogString().SetRecyclable(true);
         }
 
         public static int GetBinSize()

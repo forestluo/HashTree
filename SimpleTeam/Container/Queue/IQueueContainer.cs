@@ -1,6 +1,6 @@
 ﻿namespace SimpleTeam.Container.Queue
 {
-    public interface IQueueContainer
+    internal interface IQueueContainer
     {
         public object? GetHead();
 

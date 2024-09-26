@@ -3,7 +3,8 @@ using SimpleTeam.Function;
 
 namespace SimpleTeam.IO
 {
-    public class ByteBuffer : SimpleBuffer
+    public class ByteBuffer
+        : SimpleBuffer
     {
         //Offset of buffer.
         private int offset;

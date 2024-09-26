@@ -2,15 +2,23 @@
 
 namespace SimpleTeam.Log
 {
-    public class LogString : RecycleString
+    public class LogString
+        : RecycleString
     {
-        //Recyclable
-        private readonly bool recyclable;
+        private bool recyclable;
 
-        public LogString(bool recyclable = false)
+        public LogString()
+        {
+            //Set default.
+            recyclable = false;
+        }
+
+        internal LogString SetRecyclable(bool recyclable)
         {
             //Set flag.
             this.recyclable = recyclable;
+            //Return this.
+            return this;
         }
 
         public LogString Begin(string className = Empty.STRING,
@@ -28,8 +36,17 @@ namespace SimpleTeam.Log
         {
             //End line.
             base.End();
-            //Return result.
-            SimpleLog.Log(recyclable ? LogBin.Recycle(this) : ToString());
+            //Check flag.
+            if(!recyclable)
+            {
+                //Write to log.
+                SimpleLog.Log(ToString());
+            }
+            else
+            {
+                //Recycle and write to log.
+                SimpleLog.Log(LogBin.Recycle(this));
+            }
         }
 
         private LogString AppendClass(string className)

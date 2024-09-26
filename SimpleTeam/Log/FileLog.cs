@@ -3,7 +3,8 @@ using SimpleTeam.Time;
 
 namespace SimpleTeam.Log
 {
-    public class FileLog : ILogListener
+    public class FileLog
+        : ILogListener
     {
         //Stream writer.
         private StreamWriter sw;

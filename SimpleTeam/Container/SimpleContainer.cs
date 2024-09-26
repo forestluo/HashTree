@@ -1,6 +1,7 @@
 ﻿namespace SimpleTeam.Container
 {
-    public abstract class SimpleContainer : IContainer
+    public abstract class SimpleContainer
+		: IContainer
 	{
 		/**
 		 * Count of object in a container.

@@ -1,6 +1,7 @@
 ﻿namespace SimpleTeam.Container.Hash
 {
-    public interface IHashNode : INode
+    internal interface IHashNode
+        : INode
     {
         public string GetKey();
 

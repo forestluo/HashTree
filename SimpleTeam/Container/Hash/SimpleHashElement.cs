@@ -2,8 +2,8 @@
 
 namespace SimpleTeam.Container.Hash
 {
-    internal class SimpleHashElement :
-        KeyElement, IHashNode
+    internal class SimpleHashElement
+        : KeyElement, IHashNode
     {
         //Subnodes
         private IHashNode?[] subnodes;

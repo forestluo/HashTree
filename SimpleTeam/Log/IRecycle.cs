@@ -1,6 +1,6 @@
 ﻿namespace SimpleTeam.Log
 {
-    public interface IRecycle
+    internal interface IRecycle
     {
         public void Clear();
     }

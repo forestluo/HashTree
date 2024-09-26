@@ -1,6 +1,7 @@
 ﻿namespace SimpleTeam.Log
 {
-    public class ConsoleLog : ILogListener
+    public class ConsoleLog
+        : ILogListener
     {
         public ConsoleLog()
         {

@@ -1,6 +1,6 @@
 ﻿namespace SimpleTeam.Container.List
 {
-    public interface IListContainer
+    internal interface IListContainer
     {
         public object? GetHead();
 

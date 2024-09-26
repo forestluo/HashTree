@@ -1,6 +1,7 @@
 ﻿namespace SimpleTeam.Container.List
 {
-    public interface IListNode : INode
+    public interface IListNode
+        : INode
     {
         public IListNode GetNext();
 

@@ -5,7 +5,8 @@ using SimpleTeam.Constant.System;
 
 namespace SimpleTeam.Log
 {
-    public class RecycleString : IRecycle
+    public class RecycleString
+        : IRecycle
     {
         //String builder
         private StringBuilder buffer;

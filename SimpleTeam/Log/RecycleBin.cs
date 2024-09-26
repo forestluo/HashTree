@@ -2,7 +2,8 @@
 
 namespace SimpleTeam.Log
 {
-    public abstract class RecycleBin : IContainer
+    public abstract class RecycleBin
+        : IContainer
     {
         //Created Count
         public const int CREATED = 0;
@@ -119,7 +120,7 @@ namespace SimpleTeam.Log
             }
         }
 
-        protected abstract
+        internal abstract
             IRecycle CreateObject();
 
         protected void IncreaseReleased()
@@ -130,7 +131,7 @@ namespace SimpleTeam.Log
             }
         }
 
-        protected IRecycle MallocObject()
+        internal IRecycle MallocObject()
         {
             lock (this)
             {
@@ -153,7 +154,7 @@ namespace SimpleTeam.Log
             }
         }
 
-        protected void RecycleObject(IRecycle recycled)
+        internal void RecycleObject(IRecycle recycled)
         {
             //Clear.
             recycled.Clear();

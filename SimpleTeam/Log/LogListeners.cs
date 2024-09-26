@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace SimpleTeam.Log
+﻿namespace SimpleTeam.Log
 {
-    public class LogListeners
+    internal class LogListeners
     {
         private List<ILogListener> listeners;
 

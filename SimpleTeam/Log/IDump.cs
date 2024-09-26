@@ -2,6 +2,6 @@
 {
     public interface IDump
     {
-        public void Dump(StringWriter sw);
+        public void Dump();
     }
 }

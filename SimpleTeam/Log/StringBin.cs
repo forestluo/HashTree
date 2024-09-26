@@ -1,6 +1,7 @@
 ﻿namespace SimpleTeam.Log
 {
-    public class StringBin : RecycleBin
+    public class StringBin
+        : RecycleBin
     {
         //Default Capacity
         public const int DEFAULT_CAPACITY = 32;
@@ -19,7 +20,7 @@
             stringBin.SetCapacity(DEFAULT_CAPACITY);
         }
 
-        protected override IRecycle CreateObject()
+        internal override IRecycle CreateObject()
         {
             //Return result.
             return new RecycleString();

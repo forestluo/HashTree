@@ -1,6 +1,7 @@
 ﻿namespace SimpleTeam.Container
 {
-    public class KeyElement : SimpleElement
+    public class KeyElement
+        : SimpleElement
     {
         /**
 	     * Key of element.

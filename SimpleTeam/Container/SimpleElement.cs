@@ -1,6 +1,7 @@
 ﻿namespace SimpleTeam.Container
 {
-    public class SimpleElement : INode
+    public class SimpleElement
+		: INode
 	{
 		//Object
 		private object? value;

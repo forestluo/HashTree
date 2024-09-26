@@ -2,8 +2,8 @@
 
 namespace SimpleTeam.Container.Queue
 {
-    public class ListQueueContainer :
-        SimpleContainer, IQueueContainer
+    public class ListQueueContainer
+        : SimpleContainer, IQueueContainer
     {
         //Root of list.
         private IListNode root;
