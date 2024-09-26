@@ -5,38 +5,59 @@
 #（1）Case目录
 
   这里主要是一些测试用的例程。也相当于展示项目代码基本功能的例程。
+  
   EndianCase.cs：主要展示了编码字节序的功能，包括：Little Endian（主机序）和Big Endian（网络序）。
+  
   LogCase.cs：展示了项目有关日志的基本功能。
+  
   SimpleHashCase.cs：展示了基于纯内存对象的哈系树查找算法。
+  
   SimpleListContainerCase.cs：展示了基于纯内存对象的双向循环链表算法。
+  
   StringBinCase.cs：展示了不同类型的字符串（ToString、StringBuilder、RecycledString、LogString）对象在使用时间消耗上的差异。
+  
   SystemTimeCase.cs：展示了项目自定义的时间体系的基本功能。
 
 #（2）Constant目录
 
   这里主要是一些系统常量的定义。这里面有一些常量定义和MMS-WAP协议相关。
+  
   Prime.cs：定义了质数的基本算法，包括求取余数，小于1024的质数表，小于256的互质数表（用于哈希树查找算法）。
 
 #（3）Container目录
 
   这里主要是定义了数据容器，及其相关算法操作。
+  
   Hash目录：基于纯内存对象的哈系数查找算法的具体实现。
+  
   List目录：基于纯内存对象的双向循环链表算法的具体实现。
+  
   KeyElements.cs：key-value元素的基本定义。
+  
   SimpleContainer.cs：简单容器的基本定义。
+  
   SimpleElement.cs：简单元素的基本定义。
 
 #（4）Function目录
 
   一些常用零散的函数功能。
+  
   BigEndian.cs；按照网络序，将一些常见数据类型转换成字节数组，或者从字节数组转换成常用数据类型。
+  
   Comparer.cs：对字符串和字节数组进行数据比较，可以允许输入参数为null。
+  
   DecimalFormat.cs：将数字字符串解析成常用数据类型。
+  
   Even.cs：偶数判定。
+  
   HexFormat：将常用数据类型转换成16进制字节格式，或者从16进制字节格式转换成常用数据类型。
+  
   LittleEndian.cs；按照主机序，将一些常见数据类型转换成字节数组，或者从字节数组转换成常用数据类型。
+  
   Odd.cs：奇数判定。
+  
   SimpleHash.cs：求取字符串或者字节数组的哈希值（非MD5）算法。
+  
   SimpleRandom.cs：求取常用伪随机变量。使用了唯一的伪随机变量，该变量会随时间不同，而给予不同的初始值。
 
 （5）IO目录
@@ -50,7 +71,9 @@
 （7）Time目录
 
   定义了系统的常用时间常量。
+  
   Java系统中所使用的是以毫秒为基础，而C#系统中所使用的是以纳秒（Tick）为基础。此目录的功能主要是为了兼容一些常量的变换，方便后续迁移代码。
+  
   SimpleTime.cs：兼具Java中的Time和Calendar的作用。
 
 --------------------------------------------------------------------------------
