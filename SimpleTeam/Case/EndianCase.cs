@@ -1,6 +1,4 @@
-﻿using SimpleTeam.Constant;
-using SimpleTeam.Function;
-using SimpleTeam.Log;
+﻿using SimpleTeam.Function;
 
 namespace SimpleTeam.Case
 {

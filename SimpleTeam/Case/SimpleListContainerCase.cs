@@ -1,7 +1,6 @@
-﻿using SimpleTeam.Container;
-using SimpleTeam.Container.List;
+﻿using SimpleTeam.Time;
 using SimpleTeam.Function;
-using SimpleTeam.Time;
+using SimpleTeam.Container.List;
 
 namespace SimpleTeam.Case
 {
