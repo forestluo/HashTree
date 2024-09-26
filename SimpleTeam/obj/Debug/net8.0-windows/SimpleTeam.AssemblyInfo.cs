@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimpleTeam")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d7713ab6cecfce252597356c6757bfad91606cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50004d4026d8380d439698eac47e8be63eddb882")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimpleTeam")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimpleTeam")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
