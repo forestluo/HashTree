@@ -1,0 +1,15 @@
+D:\Workspaces\AlgMain\EnumExample\bin\Debug\net8.0\EnumExample.exe
+D:\Workspaces\AlgMain\EnumExample\bin\Debug\net8.0\EnumExample.deps.json
+D:\Workspaces\AlgMain\EnumExample\bin\Debug\net8.0\EnumExample.runtimeconfig.json
+D:\Workspaces\AlgMain\EnumExample\bin\Debug\net8.0\EnumExample.dll
+D:\Workspaces\AlgMain\EnumExample\bin\Debug\net8.0\EnumExample.pdb
+D:\Workspaces\AlgMain\EnumExample\obj\Debug\net8.0\EnumExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspaces\AlgMain\EnumExample\obj\Debug\net8.0\EnumExample.AssemblyInfoInputs.cache
+D:\Workspaces\AlgMain\EnumExample\obj\Debug\net8.0\EnumExample.AssemblyInfo.cs
+D:\Workspaces\AlgMain\EnumExample\obj\Debug\net8.0\EnumExample.csproj.CoreCompileInputs.cache
+D:\Workspaces\AlgMain\EnumExample\obj\Debug\net8.0\EnumExample.dll
+D:\Workspaces\AlgMain\EnumExample\obj\Debug\net8.0\refint\EnumExample.dll
+D:\Workspaces\AlgMain\EnumExample\obj\Debug\net8.0\EnumExample.pdb
+D:\Workspaces\AlgMain\EnumExample\obj\Debug\net8.0\EnumExample.genruntimeconfig.cache
+D:\Workspaces\AlgMain\EnumExample\obj\Debug\net8.0\ref\EnumExample.dll
+D:\Workspaces\AlgMain\EnumExample\obj\Debug\net8.0\EnumExample.sourcelink.json
