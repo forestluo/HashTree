@@ -1,0 +1,15 @@
+D:\Workspaces\AlgMain\MMFileExample\bin\Debug\net8.0\MMFileExample.exe
+D:\Workspaces\AlgMain\MMFileExample\bin\Debug\net8.0\MMFileExample.deps.json
+D:\Workspaces\AlgMain\MMFileExample\bin\Debug\net8.0\MMFileExample.runtimeconfig.json
+D:\Workspaces\AlgMain\MMFileExample\bin\Debug\net8.0\MMFileExample.dll
+D:\Workspaces\AlgMain\MMFileExample\bin\Debug\net8.0\MMFileExample.pdb
+D:\Workspaces\AlgMain\MMFileExample\obj\Debug\net8.0\MMFileExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspaces\AlgMain\MMFileExample\obj\Debug\net8.0\MMFileExample.AssemblyInfoInputs.cache
+D:\Workspaces\AlgMain\MMFileExample\obj\Debug\net8.0\MMFileExample.AssemblyInfo.cs
+D:\Workspaces\AlgMain\MMFileExample\obj\Debug\net8.0\MMFileExample.csproj.CoreCompileInputs.cache
+D:\Workspaces\AlgMain\MMFileExample\obj\Debug\net8.0\MMFileExample.dll
+D:\Workspaces\AlgMain\MMFileExample\obj\Debug\net8.0\refint\MMFileExample.dll
+D:\Workspaces\AlgMain\MMFileExample\obj\Debug\net8.0\MMFileExample.pdb
+D:\Workspaces\AlgMain\MMFileExample\obj\Debug\net8.0\MMFileExample.genruntimeconfig.cache
+D:\Workspaces\AlgMain\MMFileExample\obj\Debug\net8.0\ref\MMFileExample.dll
+D:\Workspaces\AlgMain\MMFileExample\obj\Debug\net8.0\MMFileExample.sourcelink.json
