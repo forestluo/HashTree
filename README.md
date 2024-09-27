@@ -33,6 +33,8 @@
   List目录：基于纯内存对象的双向循环链表算法的具体实现。
 
   Queue目录：基于纯内存对象的双向循环链表队列的具体实现。
+
+  Properties目录：基于Hashtable的属性容器的具体实现。
   
   KeyElements.cs：key-value元素的基本定义。
   
