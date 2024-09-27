@@ -213,7 +213,7 @@ namespace SimpleTeam.Container.Hash
             //Index for search.
             int index = -1;
 #if DEBUG
-            if (Empty.IsNullOrEmpty(key))
+            if (string.IsNullOrEmpty(key))
             {
                 throw new ArgumentException("invalid key(" + key + ")");
             }

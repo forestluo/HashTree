@@ -25,7 +25,7 @@ namespace SimpleTeam.Container.Hash
             : base(key, value)
         {
 #if DEBUG
-            if(Empty.IsNullOrEmpty(key))
+            if(string.IsNullOrEmpty(key))
             {
                 throw new ArgumentException("invalid key(" + key + ")");
             }
