@@ -40,7 +40,7 @@ namespace SimpleTeam.Container.File
             this.sizeType = sizeType;
         }
 
-        internal void Initialize()
+        internal virtual void Initialize()
         {
             //Set next page.
             nextPage = -1L;
@@ -48,7 +48,7 @@ namespace SimpleTeam.Container.File
             occupiedSize = OccupiedSize.FULL;
         }
 
-        protected void Wrap(SimpleBuffer buffer)
+        protected virtual void Wrap(SimpleBuffer buffer)
         {
             //Set position.
             buffer.SetPosition(0);
@@ -72,7 +72,7 @@ namespace SimpleTeam.Container.File
             }
         }
 
-        protected void Unwrap(SimpleBuffer buffer)
+        protected virtual void Unwrap(SimpleBuffer buffer)
         {
             //Set position.
             buffer.SetPosition(0);
@@ -98,7 +98,7 @@ namespace SimpleTeam.Container.File
             }
         }
 
-        protected void Unwrap(SimpleBuffer buffer, PageDescription description)
+        protected virtual void Unwrap(SimpleBuffer buffer, PageDescription description)
         {
             //Set position.
             buffer.SetPosition(0);
@@ -113,7 +113,7 @@ namespace SimpleTeam.Container.File
             nextPage = description.nextPage;
         }
 
-        protected void CheckValid(long fileSize)
+        protected virtual void CheckValid(long fileSize)
         {
     		//Check page type.
 	    	if(!PageType.IsValid(pageType))

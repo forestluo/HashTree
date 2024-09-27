@@ -137,7 +137,7 @@ namespace SimpleTeam.Container.Properties
                 else if (value.GetType() == typeof(byte[]))
                 {
                     //Print.
-                    buffer.Append('\t').Append(key).Append(" = 0x").Append(HexFormat.ToString((byte[])value)).Append("\"").AppendLine();
+                    buffer.Append('\t').Append(key).Append(" = 0x").Append(HexFormat.ToString((byte[])value)).AppendLine();
                 }
                 else
                 {
