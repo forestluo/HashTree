@@ -3,7 +3,7 @@ using SimpleTeam.Constant;
 
 namespace SimpleTeam.Container.File
 {
-    internal class HeadPageBuffer
+    public class HeadPageBuffer
         : PageBuffer
     {
         //////////////////////////////////////////////////
@@ -22,9 +22,9 @@ namespace SimpleTeam.Container.File
         //
         //////////////////////////////////////////////////
         //Default Size Type
-        public const int DEFAULT_SIZE_TYPE = SizeType.HQKB;
+        internal const int DEFAULT_SIZE_TYPE = SizeType.HQKB;
         //Default Size
-        static readonly int DEFAULT_SIZE = SizeType.GetRealSize(DEFAULT_SIZE_TYPE);
+        internal static readonly int DEFAULT_SIZE = SizeType.GetRealSize(DEFAULT_SIZE_TYPE);
 
         //Magic Number
         public int magicNumber;
@@ -80,7 +80,7 @@ namespace SimpleTeam.Container.File
             copyright = Constant.Copywrite.SimpleTeam.COPYWRITE;
         }
 
-        protected sealed override void Wrap(SimpleBuffer buffer)
+        internal sealed override void Wrap(SimpleBuffer buffer)
         {
             base.Wrap(buffer);
 
@@ -104,7 +104,7 @@ namespace SimpleTeam.Container.File
             buffer.PutString(copyright);
         }
 
-        protected sealed override void Unwrap(SimpleBuffer buffer)
+        internal sealed override void Unwrap(SimpleBuffer buffer)
         {
             base.Unwrap(buffer);
 
@@ -128,7 +128,7 @@ namespace SimpleTeam.Container.File
             copyright = buffer.GetString();
         }
 
-        protected sealed override void Unwrap(SimpleBuffer buffer, PageDescription description)
+        internal sealed override void Unwrap(SimpleBuffer buffer, PageDescription description)
         {
             base.Unwrap(buffer, description);
 
@@ -152,7 +152,7 @@ namespace SimpleTeam.Container.File
             copyright = buffer.GetString();
         }
 
-        protected sealed override void CheckValid(long fileSize)
+        internal sealed override void CheckValid(long fileSize)
         {
             base.CheckValid(fileSize);
 

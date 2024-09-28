@@ -3,11 +3,11 @@ using System.Security.AccessControl;
 
 namespace SimpleTeam.Container.File
 {
-    internal class FreePageBuffer
+    public class FreePageBuffer
         : PageBuffer
     {
         //Default Data Page Types
-        const int DEFAULT_DATA_PAGE_TYPES = SizeType.TOTAL_TYPES;
+        internal const int DEFAULT_DATA_PAGE_TYPES = SizeType.TOTAL_TYPES;
         //////////////////////////////////////////////////
         //
         //Offsets.
@@ -16,9 +16,9 @@ namespace SimpleTeam.Container.File
         //
         //////////////////////////////////////////////////
         //Default Size Type
-        public const int DEFAULT_SIZE_TYPE = SizeType.HQKB;
+        internal const int DEFAULT_SIZE_TYPE = SizeType.HQKB;
         //Default Size
-        static readonly int DEFAULT_SIZE = SizeType.GetRealSize(DEFAULT_SIZE_TYPE);
+        internal static readonly int DEFAULT_SIZE = SizeType.GetRealSize(DEFAULT_SIZE_TYPE);
 
         //Next Data Pages
         public long[] nextDataPages;
@@ -43,7 +43,7 @@ namespace SimpleTeam.Container.File
             for (int i = 0; i < DEFAULT_DATA_PAGE_TYPES; i++) nextDataPages[i] = -1L;
         }
 
-        protected sealed override void Wrap(SimpleBuffer buffer)
+        internal sealed override void Wrap(SimpleBuffer buffer)
         {
             base.Wrap(buffer);
 
@@ -55,7 +55,7 @@ namespace SimpleTeam.Container.File
             }
         }
 
-        protected sealed override void Unwrap(SimpleBuffer buffer)
+        internal sealed override void Unwrap(SimpleBuffer buffer)
         {
             base.Unwrap(buffer);
 
@@ -79,7 +79,7 @@ namespace SimpleTeam.Container.File
             }
         }
 
-        protected sealed override void Unwrap(SimpleBuffer buffer, PageDescription description)
+        internal sealed override void Unwrap(SimpleBuffer buffer, PageDescription description)
         {
             base.Unwrap(buffer, description);
 
@@ -103,7 +103,7 @@ namespace SimpleTeam.Container.File
             }
         }
 
-        protected sealed override void CheckValid(long fileSize)
+        internal sealed override void CheckValid(long fileSize)
         {
             base.CheckValid(fileSize);
 

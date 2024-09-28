@@ -7,18 +7,10 @@ namespace SimpleTeam.Log
     {
         private bool recyclable;
 
-        public LogString()
+        public LogString(bool recyclable = false)
         {
             //Set default.
-            recyclable = false;
-        }
-
-        internal LogString SetRecyclable(bool recyclable)
-        {
-            //Set flag.
             this.recyclable = recyclable;
-            //Return this.
-            return this;
         }
 
         public LogString Begin(string className = Empty.STRING,

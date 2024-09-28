@@ -2,7 +2,7 @@
 
 namespace SimpleTeam.Container.File
 {
-    internal abstract class PageBuffer
+    public abstract class PageBuffer
     {
         //////////////////////////////////////////////////
         //
@@ -15,7 +15,7 @@ namespace SimpleTeam.Container.File
         //
         //////////////////////////////////////////////////
         //Minimum Page Size
-        const int MINIMUM_PAGE_SIZE = PageDescription.SIZE;
+        internal const int MINIMUM_PAGE_SIZE = PageDescription.SIZE;
 
         //Page Type
         public int pageType;
@@ -48,7 +48,7 @@ namespace SimpleTeam.Container.File
             occupiedSize = OccupiedSize.FULL;
         }
 
-        protected virtual void Wrap(SimpleBuffer buffer)
+        internal virtual void Wrap(SimpleBuffer buffer)
         {
             //Set position.
             buffer.SetPosition(0);
@@ -72,7 +72,7 @@ namespace SimpleTeam.Container.File
             }
         }
 
-        protected virtual void Unwrap(SimpleBuffer buffer)
+        internal virtual void Unwrap(SimpleBuffer buffer)
         {
             //Set position.
             buffer.SetPosition(0);
@@ -98,7 +98,7 @@ namespace SimpleTeam.Container.File
             }
         }
 
-        protected virtual void Unwrap(SimpleBuffer buffer, PageDescription description)
+        internal virtual void Unwrap(SimpleBuffer buffer, PageDescription description)
         {
             //Set position.
             buffer.SetPosition(0);
@@ -113,7 +113,7 @@ namespace SimpleTeam.Container.File
             nextPage = description.nextPage;
         }
 
-        protected virtual void CheckValid(long fileSize)
+        internal virtual void CheckValid(long fileSize)
         {
     		//Check page type.
 	    	if(!PageType.IsValid(pageType))

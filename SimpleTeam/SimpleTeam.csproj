@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
-    <StartupObject>SimpleTeam.Case.PropertiesContainerCase</StartupObject>
+    <StartupObject>SimpleTeam.Case.DataFileOperatorCase</StartupObject>
   </PropertyGroup>
 
 </Project>

@@ -7,7 +7,7 @@ using SimpleTeam.Function;
 
 namespace SimpleTeam.Container.File
 {
-    internal class PageDescription
+    public class PageDescription
         : IDump
     {
         //Size Of Description
@@ -23,7 +23,7 @@ namespace SimpleTeam.Container.File
         //
         //////////////////////////////////////////////////
         //Default Size Type
-        const int DEFAULT_SIZE_TYPE = SizeType.QQKB;
+        internal const int DEFAULT_SIZE_TYPE = SizeType.QQKB;
 
         //Page Type
         public int pageType;

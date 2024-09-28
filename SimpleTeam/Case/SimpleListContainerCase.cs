@@ -16,7 +16,7 @@ namespace SimpleTeam.Case
                 //Create list.
                 SimpleListContainer container = new SimpleListContainer();
                 //Get enumerator.
-                SimpleListEnumerator iterator = (SimpleListEnumerator)container.GetEnumerator();
+                SimpleListEnumerator iterator = container.GetEnumerator();
 
                 //Insert count.
                 int insert = 0;

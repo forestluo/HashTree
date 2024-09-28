@@ -44,9 +44,9 @@ namespace SimpleTeam.IO
 
         public abstract void GetBytes(byte[] bytes, int offset, int length);
 
-        public abstract int PutBytes(byte[] bytes);
+        public abstract int PutBytes(byte[]? bytes);
 
-        public abstract int PutBytes(byte[] bytes, int offset, int length);
+        public abstract int PutBytes(byte[]? bytes, int offset, int length);
 
         public string? GetString()
         {

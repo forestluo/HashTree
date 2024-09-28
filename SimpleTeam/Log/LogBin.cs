@@ -23,7 +23,7 @@
         internal override IRecycle CreateObject()
         {
             //Return result.
-            return new LogString().SetRecyclable(true);
+            return new LogString(true);
         }
 
         public static int GetBinSize()

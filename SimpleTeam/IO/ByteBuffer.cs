@@ -188,7 +188,7 @@ namespace SimpleTeam.IO
         {
 #if DEBUG
             //Check bytes.
-            if(Empty.IsNullOrEmpty(bytes))
+            if (bytes == null || bytes.Length <= 0)
             {
                 throw new IOException("null or empty bytes");
             }
@@ -208,7 +208,7 @@ namespace SimpleTeam.IO
         {
 #if DEBUG
             //Check bytes.
-            if(Empty.IsNullOrEmpty(bytes))
+            if(bytes == null || bytes.Length <= 0)
             {
                 throw new IOException("null or empty bytes");
             }
@@ -224,10 +224,10 @@ namespace SimpleTeam.IO
             offset += length;
         }
 
-        public sealed override int PutBytes(byte[] bytes)
+        public sealed override int PutBytes(byte[]? bytes)
         {
             //Check result.
-            if (Empty.IsNullOrEmpty(bytes)) return 0;
+            if (bytes == null || bytes.Length <= 0) return 0;
             //Copy bytes.
             Array.Copy(bytes, 0, this.bytes, offset, bytes.Length);
             //Add offset and length.
@@ -236,10 +236,10 @@ namespace SimpleTeam.IO
             return bytes.Length;
         }
 
-        public sealed override int PutBytes(byte[] bytes, int offset, int length)
+        public sealed override int PutBytes(byte[]? bytes, int offset, int length)
         {
             //Check result.
-            if (Empty.IsNullOrEmpty(bytes)) return 0;
+            if (bytes == null || bytes.Length <= 0) return 0;
             //Copy bytes.
             Array.Copy(bytes, offset, this.bytes, this.offset, length);
             //Add offset and length.
