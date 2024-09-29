@@ -137,9 +137,7 @@ namespace SimpleTeam.Container.File
             //Offset.
             long offset = GetDataSize();
             //Write buffer.
-            WriteFully(offset, pageBuffer);
-            //Increase size and count.
-            IncreaseSizeAndCount();
+            WriteFully(offset, pageBuffer); IncreaseSizeAndCount();
             //Return result.
             return offset;
         }
@@ -269,7 +267,7 @@ namespace SimpleTeam.Container.File
             WriteFully(0, buffer);
         }
 
-        protected PageBuffer LoadPageBuffer(long position)
+        internal PageBuffer LoadPageBuffer(long position)
         {
             //Create description.
             PageDescription description = new ();
@@ -294,17 +292,17 @@ namespace SimpleTeam.Container.File
                 //Create page buffer.
                 pageBuffer = new DataPageBuffer();
             }
-            /*
             else if (description.pageType == PageType.QUEUE_PAGE)
             {
                 //Create page buffer.
-                //pageBuffer = new QueuePageBuffer();
+                pageBuffer = new QueuePageBuffer();
             }
             else if (description.pageType == PageType.QUEUE_ELEMENT)
             {
                 //Create page buffer.
-                //pageBuffer = new QueueElementBuffer();
+                pageBuffer = new QueueElementBuffer();
             }
+            /*
             else if (description.pageType == PageType.INDEX_PAGE)
             {
                 //Create page buffer.
