@@ -91,8 +91,10 @@ namespace SimpleTeam.Function
             {
                 //Check b2.
                 if (b2 == null || b2.Length <= 0) return false;
-                //Check bytes.
-                for (int i = 0; i < b1.Length && i < b2.Length; i++)
+                //Get length.
+                int length = Math.Min(b1.Length, b2.Length);
+                //Do while.
+                for (int i = 0; i < length; i ++)
                 {
                     //Check bytes.
                     if (b1[i] != b2[i]) return false;
@@ -111,8 +113,10 @@ namespace SimpleTeam.Function
             {
                 //Check b2.
                 if (b2 == null || b2.Length <= 0) return false;
+                //Get length.
+                length = Math.Min(Math.Min(b1.Length, b2.Length), length);
                 //Check bytes.
-                for (int i = 0; i < length && i < b1.Length && i < b2.Length; i++)
+                for (int i = 0; i < length; i++)
                 {
                     //Check bytes.
                     if (b1[i] != b2[i]) return false;

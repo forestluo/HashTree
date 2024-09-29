@@ -1,8 +1,6 @@
-﻿using SimpleTeam.IO;
-using SimpleTeam.Constant;
+﻿using System.IO.MemoryMappedFiles;
 
-using System.IO.MemoryMappedFiles;
-using System.Drawing;
+using SimpleTeam.IO;
 
 namespace SimpleTeam.Container.File
 {
