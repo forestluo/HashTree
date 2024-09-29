@@ -5,10 +5,16 @@
 #（1）Case目录
 
   这里主要是一些测试用的例程。除了检测和验证的代码的正确性和效率，也相当于展示项目代码基本功能的例程。
+
+  DataFileOperatorCase.cs：主要展示了基础的存储页分配和释放，以及数据增删功能。
   
   EndianCase.cs：主要展示了编码字节序的功能，包括：Little Endian（主机序）和Big Endian（网络序）。
   
   LogCase.cs：展示了项目有关日志的基本功能。
+
+  PropertiesContainerCase.cs：展示了属性值容器的基本功能。
+
+  QueueFileOperator.cs：展示了队列数据存储操作的基本功能。
   
   SimpleHashCase.cs：展示了基于纯内存对象的哈系树查找算法。
   
