@@ -9,6 +9,8 @@
   DataFileOperatorCase.cs：主要展示了基础的存储页分配和释放，以及数据增删功能。
   
   EndianCase.cs：主要展示了编码字节序的功能，包括：Little Endian（主机序）和Big Endian（网络序）。
+
+  IndexFileOperatorCase.cs：主要展示了基于文件操作的HashTree查找算法。
   
   LogCase.cs：展示了项目有关日志的基本功能。
 
@@ -33,15 +35,17 @@
 #（3）Container目录
 
   这里主要是定义了数据容器，及其相关算法操作。
+
+  File目录：基于文件操作的一些算法的实现。
   
   Hash目录：基于纯内存对象的哈系数查找算法的具体实现。
   
   List目录：基于纯内存对象的双向循环链表算法的具体实现。
 
+  Properties目录：基于Hashtable的属性容器的具体实现。
+
   Queue目录：基于纯内存对象的双向循环链表队列的具体实现。
 
-  Properties目录：基于Hashtable的属性容器的具体实现。
-  
   KeyElements.cs：key-value元素的基本定义。
   
   SimpleContainer.cs：简单容器的基本定义。
