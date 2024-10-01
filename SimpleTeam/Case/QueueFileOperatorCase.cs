@@ -110,8 +110,8 @@ namespace SimpleTeam.Case
                 //Calculate consumed time.
                 Console.WriteLine("QueueFileOperatorCase.DoCaseA : consumed = " + (DateTime.Now.Ticks - clock) / Millisecond.TICKS + " ms");
 
-                //Keep queue page.
-                queueOperator.KeepQueuePage();
+                //Close.
+                queueOperator.Close();
                 //Try to close.
                 container.Close();
             }
@@ -203,8 +203,7 @@ namespace SimpleTeam.Case
                 Console.WriteLine("Clear all data from queue !");
                 //Remove all data.
                 queueOperator.ClearAll();
-                //Keep queue page.
-                queueOperator.KeepQueuePage();
+
                 //Try to close.
                 container.Close();
             }

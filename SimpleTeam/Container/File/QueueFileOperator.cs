@@ -64,8 +64,13 @@ namespace SimpleTeam.Container.File
             pageBuffer.offset = offset;
         }
 
-        public void KeepQueuePage()
+        public sealed override void Flush()
         {
+		    //Check page buffer.
+		    if(pageBuffer == null)
+		    {
+			    throw new IOException("operator is closed");
+            }
             //Write fully.
             WriteFully(pageBuffer.offset, pageBuffer);
         }
@@ -119,8 +124,8 @@ namespace SimpleTeam.Container.File
                 //Sub count.
                 pageBuffer.count --;
             }
-		    //Return result.
-		    return dataOffset;
+            //Return result.
+            return dataOffset;
 	    }
 
         public void KeepData(long dataOffset)

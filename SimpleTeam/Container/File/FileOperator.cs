@@ -11,6 +11,10 @@
             this.container = container;
         }
 
+        public virtual void Flush() { }
+
+        public virtual void Close() { Flush(); }
+
         protected long AddPage(PageBuffer pageBuffer)
         {
             //Return result.

@@ -35,11 +35,11 @@
 			this.count = count;
 		}
 
-		protected void IncreaseCount() { count++; }
+		protected void IncreaseCount() { count ++; }
 
 		protected void IncreaseCount(int count) { this.count += count; }
 
-		protected void DecreaseCount() { count--; }
+		protected void DecreaseCount() { count --; }
 
 		protected void DecreaseCount(int count) { this.count -= count; }
 
@@ -49,17 +49,17 @@
 			this.size = size;
 		}
 
-		protected void IncreaseSize() { size++; }
+		protected void IncreaseSize() { size ++; }
 
 		protected void IncreaseSize(int size) { this.size += size; }
 
-		protected void DecreaseSize() { size--; }
+		protected void DecreaseSize() { size --; }
 
 		protected void DecreaseSize(int size) { this.size -= size; }
 
-		protected void IncreaseSizeAndCount() { size++; count++; }
+		protected void IncreaseSizeAndCount() { size ++; count ++; }
 
-		protected void DecreaseSizeAndCount() { size--; count--; }
+		protected void DecreaseSizeAndCount() { size --; count --; }
 
 		public int GetSize() { return size; }
 

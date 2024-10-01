@@ -71,12 +71,6 @@ namespace SimpleTeam.Container.File
             writeCount += SizeOf.INTEGER;
             //Add position.
             lastPosition += SizeOf.INTEGER;
-            //Check position.
-            if (position + SizeOf.INTEGER > dataSize)
-            {
-                //Add data size.
-                dataSize = position + SizeOf.INTEGER;
-            }
         }
 
         public sealed override void ReadFully(long position, byte[] bytes)
@@ -105,12 +99,6 @@ namespace SimpleTeam.Container.File
             writeCount += bytes.Length;
             //Add position.
             lastPosition += bytes.Length;
-            //Check data size.
-            if (position + bytes.Length > dataSize)
-            {
-                //Set data size.
-                dataSize = position + bytes.Length;
-            }
         }
 
         public sealed override void ReadBytes(long position, byte[] bytes, int offset, int length)
@@ -139,12 +127,6 @@ namespace SimpleTeam.Container.File
             writeCount += length;
             //Add position.
             lastPosition += length;
-            //Check data size.
-            if (position + length > dataSize)
-            {
-                //Set data size.
-                dataSize = position + length;
-            }
         }
 
         public sealed override void ReadFully(long position, SimpleBuffer buffer)
@@ -179,12 +161,6 @@ namespace SimpleTeam.Container.File
             writeCount += size;
             //Add position.
             lastPosition += size;
-            //Check data size.
-            if (position + size > dataSize)
-            {
-                //Set data size.
-                dataSize = position + size;
-            }
         }
 
         public sealed override void ReadPartially(long position, SimpleBuffer buffer, int length)
@@ -219,12 +195,6 @@ namespace SimpleTeam.Container.File
             writeCount += size;
             //Add position.
             lastPosition += size;
-            //Check data size.
-            if (position + size > dataSize)
-            {
-                //Set data size.
-                dataSize = position + size;
-            }
         }
     }
 }

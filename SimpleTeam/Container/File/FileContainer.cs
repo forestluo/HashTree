@@ -106,8 +106,7 @@ namespace SimpleTeam.Container.File
             //Padding.
             int padding = (int)(position + size - fileLength);
             //Check padding.
-            if (padding <= defaultSize) padding = defaultSize;
-            else padding = (padding / defaultSize + 1) * defaultSize;
+            padding = (padding / defaultSize + 1) * defaultSize;
             //Append file.
             AppendFile(padding); return true;
         }
@@ -135,9 +134,13 @@ namespace SimpleTeam.Container.File
         internal long AddPage(PageBuffer pageBuffer)
         {
             //Offset.
-            long offset = GetDataSize();
+            long offset = dataSize;
             //Write buffer.
-            WriteFully(offset, pageBuffer); IncreaseSizeAndCount();
+            WriteFully(dataSize, pageBuffer);
+            //Increase size and count.
+            IncreaseSizeAndCount();
+            //Get real size.
+            dataSize += SizeType.GetRealSize(pageBuffer.sizeType);
             //Return result.
             return offset;
         }
@@ -226,6 +229,8 @@ namespace SimpleTeam.Container.File
             buffer.count = GetCount();
             //Write buffer.
             WriteFully(0, buffer);
+            //Add data size.
+            dataSize += HeadPageBuffer.DEFAULT_SIZE;
         }
 
         private void KeepFreePage()
@@ -241,6 +246,8 @@ namespace SimpleTeam.Container.File
 
             //Write buffer.
             WriteFully(HeadPageBuffer.DEFAULT_SIZE, buffer);
+            //Add data size.
+            dataSize += FreePageBuffer.DEFAULT_SIZE;
         }
 
         private void CloseHeadPage()
@@ -302,18 +309,16 @@ namespace SimpleTeam.Container.File
                 //Create page buffer.
                 pageBuffer = new QueueElementBuffer();
             }
-            /*
             else if (description.pageType == PageType.INDEX_PAGE)
             {
                 //Create page buffer.
-                //pageBuffer = new IndexPageBuffer();
+                pageBuffer = new IndexPageBuffer();
             }
             else if (description.pageType == PageType.INDEX_ELEMENT)
             {
                 //Create page buffer.
-                //pageBuffer = new IndexElementBuffer();
+                pageBuffer = new IndexElementBuffer();
             }
-            */
             else
             {
                 //Throw exception.

@@ -83,6 +83,7 @@ namespace SimpleTeam.IO
 
         public static SimpleBuffer CreateBuffer(int sizeType)
         {
+            /*
             //Check type.
             switch (sizeType)
             {
@@ -113,6 +114,17 @@ namespace SimpleTeam.IO
                     //Throw exception.
                     throw new IOException("invalid type(" + sizeType + ") of size");
             }
+            */
+#if DEBUG
+            //Check size type.
+            if (sizeType < SizeType.QQKB || sizeType > SizeType._64MB)
+            {
+                //Throw exception.
+                throw new IOException("invalid type(" + sizeType + ") of size");
+            }
+#endif
+            //Return result.
+            return new ByteBuffer(SizeType.GetRealSize(sizeType));
         }
     }
 }
