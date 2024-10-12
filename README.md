@@ -118,6 +118,4 @@
 
 给作者捐赠：
 
-<img src="https://github.com/forestluo/AlgMain/blob/main/weixin.jpg" width="210px">
-
-<img src="https://github.com/forestluo/AlgMain/blob/main/zhifubao.jpg" width="210px">
+<img src="https://github.com/forestluo/AlgMain/blob/main/weixin.jpg" width="210px"><img src="https://github.com/forestluo/AlgMain/blob/main/zhifubao.jpg" width="210px">
