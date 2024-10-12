@@ -112,3 +112,8 @@
 （5）在Printer中，PrintMultiline函数可以输出多行至文件中。该函数中单个字符直接输出的方式，居然比先输出到string，再写入文件要快。
 
 （6）在C#中，使用内存映射操作超大文件（>4GB）的速度的确要高于Java。在设备内存充足的情况下，C#基于内存映射的随机读写效率远高于Java。根据之前的测试结果，Java在文件超过2GB之后，即使使用内存映射文件访问，读写速度也下降得非常厉害。
+
+给作者捐赠：
+
+ !(https://github.com/forestluo/AlgMain/weixin.jpg?raw=true)
+ !(https://github.com/forestluo/AlgMain/zhifubao.jpg?raw=true)
