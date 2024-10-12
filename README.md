@@ -115,6 +115,6 @@
 
 给作者捐赠：
 
- !(https://github.com/forestluo/AlgMain/blob/main/weixin.jpg)
+ ![微信捐赠](https://github.com/forestluo/AlgMain/blob/main/weixin.jpg?raw=true)
  
- !(https://github.com/forestluo/AlgMain/blob/main/zhifubao.jpg)
+ ![支付宝捐赠](https://github.com/forestluo/AlgMain/blob/main/zhifubao.jpg?raw=true)
