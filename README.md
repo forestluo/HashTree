@@ -1,4 +1,4 @@
-这个项目代码的主要目的是为了实现和展示在 www.AlgMain.com 中所谈到的一些算法。这些算法包括自然语言处理（NLP）算法，也包括哈希树查找算法（详见知乎：https://zhuanlan.zhihu.com/p/290832847 或者CSDN：https://blog.csdn.net/weixin_42574918/article/details/109718660 ）。该项目的多数代码由原来的Java代码移植至C#（Visual Studio）。由于两种语言所面对的平台和环境不同，相应地做了不少修改和调整。
+这个项目代码的主要目的是为了实现和展示哈希树查找算法（详见知乎：https://zhuanlan.zhihu.com/p/290832847 或者CSDN：https://blog.csdn.net/weixin_42574918/article/details/109718660 ）。该项目的多数代码由原来的Java代码移植至C#（Visual Studio）。由于两种语言所面对的平台和环境不同，相应地做了不少修改和调整。
 
 项目SimpleTeam中的主要目录及其部分代码文件说明：
 
